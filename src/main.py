@@ -78,7 +78,7 @@ def generate_error_report(driver):
     print('Error report generated! Provide the above information to the developer for debugging purposes.')
 
 print('Downloading extension...')
-download_extension(extensionId)
+# download_extension(extensionId)
 print('Downloaded! Installing extension and driver manager...')
 
 options = webdriver.ChromeOptions()
@@ -190,7 +190,7 @@ def get():
         epoch_earnings = False
         print('Could not get earnings!')
         generate_error_report(driver)
-    
+
     try:
         #find all chakra-badge
         badges = driver.find_elements('xpath', '//*[@class="chakra-badge"]')
