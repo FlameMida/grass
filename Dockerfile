@@ -1,4 +1,4 @@
-FROM alpine:3.19
+FROM alpine:3.19.1
 
 RUN apk add --update --no-cache python3 && ln -sf python3 /usr/bin/python
 RUN apk add --no-cache chromium chromium-chromedriver unzip
